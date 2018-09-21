@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SQLTester
 {
-    public partial class Form1 : Form
+    public partial class frmTester : Form
     {
-        public Form1()
+        public frmTester()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
