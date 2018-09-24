@@ -176,6 +176,7 @@
             // chkODBCDSN
             // 
             this.chkODBCDSN.AutoSize = true;
+            this.chkODBCDSN.BackColor = System.Drawing.Color.White;
             this.chkODBCDSN.Checked = true;
             this.chkODBCDSN.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkODBCDSN.Location = new System.Drawing.Point(6, -1);
@@ -183,7 +184,7 @@
             this.chkODBCDSN.Size = new System.Drawing.Size(82, 17);
             this.chkODBCDSN.TabIndex = 0;
             this.chkODBCDSN.Text = "ODBC DSN";
-            this.chkODBCDSN.UseVisualStyleBackColor = true;
+            this.chkODBCDSN.UseVisualStyleBackColor = false;
             this.chkODBCDSN.CheckedChanged += new System.EventHandler(this.chkODBC_CheckedChanged);
             // 
             // txtODBCDSN_DSN
