@@ -34,25 +34,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.grdRecord = new System.Windows.Forms.DataGridView();
             this.grpODBCDSNConfig = new System.Windows.Forms.GroupBox();
-            this.grpOtherConfig = new System.Windows.Forms.GroupBox();
-            this.chkODBCDSN = new System.Windows.Forms.CheckBox();
-            this.chkOther = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.txtDDBCDSN_Password = new System.Windows.Forms.TextBox();
+            this.txtODBCDSN_Username = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chkODBCDSN = new System.Windows.Forms.CheckBox();
+            this.txtODBCDSN_DSN = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.grdRecord = new System.Windows.Forms.DataGridView();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.grpODBCDSNConfig.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdRecord)).BeginInit();
-            this.grpODBCDSNConfig.SuspendLayout();
-            this.grpOtherConfig.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtCommand
@@ -106,7 +105,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.grpOtherConfig);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.grpODBCDSNConfig);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -115,6 +115,84 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // grpODBCDSNConfig
+            // 
+            this.grpODBCDSNConfig.Controls.Add(this.txtDDBCDSN_Password);
+            this.grpODBCDSNConfig.Controls.Add(this.txtODBCDSN_Username);
+            this.grpODBCDSNConfig.Controls.Add(this.label3);
+            this.grpODBCDSNConfig.Controls.Add(this.label4);
+            this.grpODBCDSNConfig.Controls.Add(this.label2);
+            this.grpODBCDSNConfig.Controls.Add(this.chkODBCDSN);
+            this.grpODBCDSNConfig.Controls.Add(this.txtODBCDSN_DSN);
+            this.grpODBCDSNConfig.Location = new System.Drawing.Point(30, 23);
+            this.grpODBCDSNConfig.Name = "grpODBCDSNConfig";
+            this.grpODBCDSNConfig.Size = new System.Drawing.Size(719, 100);
+            this.grpODBCDSNConfig.TabIndex = 0;
+            this.grpODBCDSNConfig.TabStop = false;
+            this.grpODBCDSNConfig.Enter += new System.EventHandler(this.grpODBCConfig_Enter);
+            // 
+            // txtDDBCDSN_Password
+            // 
+            this.txtDDBCDSN_Password.Location = new System.Drawing.Point(100, 71);
+            this.txtDDBCDSN_Password.Name = "txtDDBCDSN_Password";
+            this.txtDDBCDSN_Password.Size = new System.Drawing.Size(270, 20);
+            this.txtDDBCDSN_Password.TabIndex = 10;
+            // 
+            // txtODBCDSN_Username
+            // 
+            this.txtODBCDSN_Username.Location = new System.Drawing.Point(100, 45);
+            this.txtODBCDSN_Username.Name = "txtODBCDSN_Username";
+            this.txtODBCDSN_Username.Size = new System.Drawing.Size(270, 20);
+            this.txtODBCDSN_Username.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Username";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Password";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "DSN";
+            // 
+            // chkODBCDSN
+            // 
+            this.chkODBCDSN.AutoSize = true;
+            this.chkODBCDSN.Checked = true;
+            this.chkODBCDSN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkODBCDSN.Location = new System.Drawing.Point(6, -1);
+            this.chkODBCDSN.Name = "chkODBCDSN";
+            this.chkODBCDSN.Size = new System.Drawing.Size(82, 17);
+            this.chkODBCDSN.TabIndex = 0;
+            this.chkODBCDSN.Text = "ODBC DSN";
+            this.chkODBCDSN.UseVisualStyleBackColor = true;
+            this.chkODBCDSN.CheckedChanged += new System.EventHandler(this.chkODBC_CheckedChanged);
+            // 
+            // txtODBCDSN_DSN
+            // 
+            this.txtODBCDSN_DSN.Location = new System.Drawing.Point(100, 19);
+            this.txtODBCDSN_DSN.Name = "txtODBCDSN_DSN";
+            this.txtODBCDSN_DSN.Size = new System.Drawing.Size(270, 20);
+            this.txtODBCDSN_DSN.TabIndex = 1;
+            this.txtODBCDSN_DSN.TextChanged += new System.EventHandler(this.txtODBCDSN_DSN_TextChanged);
             // 
             // tabPage2
             // 
@@ -139,102 +217,24 @@
             this.grdRecord.Size = new System.Drawing.Size(706, 213);
             this.grdRecord.TabIndex = 1;
             // 
-            // grpODBCDSNConfig
+            // button1
             // 
-            this.grpODBCDSNConfig.Controls.Add(this.textBox3);
-            this.grpODBCDSNConfig.Controls.Add(this.textBox2);
-            this.grpODBCDSNConfig.Controls.Add(this.label3);
-            this.grpODBCDSNConfig.Controls.Add(this.label4);
-            this.grpODBCDSNConfig.Controls.Add(this.label2);
-            this.grpODBCDSNConfig.Controls.Add(this.chkODBCDSN);
-            this.grpODBCDSNConfig.Controls.Add(this.textBox1);
-            this.grpODBCDSNConfig.Location = new System.Drawing.Point(30, 23);
-            this.grpODBCDSNConfig.Name = "grpODBCDSNConfig";
-            this.grpODBCDSNConfig.Size = new System.Drawing.Size(719, 100);
-            this.grpODBCDSNConfig.TabIndex = 0;
-            this.grpODBCDSNConfig.TabStop = false;
-            this.grpODBCDSNConfig.Enter += new System.EventHandler(this.grpODBCConfig_Enter);
+            this.button1.Location = new System.Drawing.Point(674, 371);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Next";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // grpOtherConfig
+            // button2
             // 
-            this.grpOtherConfig.Controls.Add(this.chkOther);
-            this.grpOtherConfig.Location = new System.Drawing.Point(30, 129);
-            this.grpOtherConfig.Name = "grpOtherConfig";
-            this.grpOtherConfig.Size = new System.Drawing.Size(719, 100);
-            this.grpOtherConfig.TabIndex = 1;
-            this.grpOtherConfig.TabStop = false;
-            // 
-            // chkODBCDSN
-            // 
-            this.chkODBCDSN.AutoSize = true;
-            this.chkODBCDSN.Checked = true;
-            this.chkODBCDSN.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkODBCDSN.Location = new System.Drawing.Point(6, -1);
-            this.chkODBCDSN.Name = "chkODBCDSN";
-            this.chkODBCDSN.Size = new System.Drawing.Size(82, 17);
-            this.chkODBCDSN.TabIndex = 0;
-            this.chkODBCDSN.Text = "ODBC DSN";
-            this.chkODBCDSN.UseVisualStyleBackColor = true;
-            this.chkODBCDSN.CheckedChanged += new System.EventHandler(this.chkODBC_CheckedChanged);
-            // 
-            // chkOther
-            // 
-            this.chkOther.AutoSize = true;
-            this.chkOther.Location = new System.Drawing.Point(6, -1);
-            this.chkOther.Name = "chkOther";
-            this.chkOther.Size = new System.Drawing.Size(80, 17);
-            this.chkOther.TabIndex = 1;
-            this.chkOther.Text = "checkBox2";
-            this.chkOther.UseVisualStyleBackColor = true;
-            this.chkOther.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(100, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "DSN";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Username";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Password";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(100, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(100, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 20);
-            this.textBox3.TabIndex = 10;
+            this.button2.Location = new System.Drawing.Point(593, 371);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmTester
             // 
@@ -244,17 +244,14 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmTester";
             this.Text = "SQL Tester";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.grpODBCDSNConfig.ResumeLayout(false);
+            this.grpODBCDSNConfig.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdRecord)).EndInit();
-            this.grpODBCDSNConfig.ResumeLayout(false);
-            this.grpODBCDSNConfig.PerformLayout();
-            this.grpOtherConfig.ResumeLayout(false);
-            this.grpOtherConfig.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -268,17 +265,17 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView grdRecord;
-        private System.Windows.Forms.GroupBox grpOtherConfig;
-        private System.Windows.Forms.CheckBox chkOther;
         private System.Windows.Forms.GroupBox grpODBCDSNConfig;
         private System.Windows.Forms.CheckBox chkODBCDSN;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtODBCDSN_DSN;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDDBCDSN_Password;
+        private System.Windows.Forms.TextBox txtODBCDSN_Username;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
