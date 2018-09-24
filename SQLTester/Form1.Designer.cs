@@ -45,7 +45,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grdRecord = new System.Windows.Forms.DataGridView();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNextTab = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -106,14 +106,14 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnNextTab);
             this.tabPage1.Controls.Add(this.grpODBCDSNConfig);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(780, 412);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Connection";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // grpODBCDSNConfig
@@ -206,7 +206,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(780, 412);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Test SQL";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // grdRecord
@@ -217,14 +217,15 @@
             this.grdRecord.Size = new System.Drawing.Size(706, 213);
             this.grdRecord.TabIndex = 1;
             // 
-            // button1
+            // btnNextTab
             // 
-            this.button1.Location = new System.Drawing.Point(674, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNextTab.Location = new System.Drawing.Point(674, 371);
+            this.btnNextTab.Name = "btnNextTab";
+            this.btnNextTab.Size = new System.Drawing.Size(75, 23);
+            this.btnNextTab.TabIndex = 1;
+            this.btnNextTab.Text = "Next";
+            this.btnNextTab.UseVisualStyleBackColor = true;
+            this.btnNextTab.Click += new System.EventHandler(this.btnNextTab_Click);
             // 
             // button2
             // 
@@ -275,7 +276,7 @@
         private System.Windows.Forms.Label label4;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNextTab;
     }
 }
 
