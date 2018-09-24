@@ -111,5 +111,10 @@ namespace SQLTester
         {
             tabControl1.SelectedTab = tabControl1.TabPages[tabControl1.TabPages.Count - 1];
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

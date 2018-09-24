@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnNextTab = new System.Windows.Forms.Button();
             this.grpODBCDSNConfig = new System.Windows.Forms.GroupBox();
             this.txtDDBCDSN_Password = new System.Windows.Forms.TextBox();
             this.txtODBCDSN_Username = new System.Windows.Forms.TextBox();
@@ -45,8 +47,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grdRecord = new System.Windows.Forms.DataGridView();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.btnNextTab = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpODBCDSNConfig.SuspendLayout();
@@ -56,18 +56,20 @@
             // 
             // txtCommand
             // 
-            this.txtCommand.Location = new System.Drawing.Point(41, 239);
+            this.txtCommand.Location = new System.Drawing.Point(33, 321);
+            this.txtCommand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCommand.Multiline = true;
             this.txtCommand.Name = "txtCommand";
             this.txtCommand.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCommand.Size = new System.Drawing.Size(574, 170);
+            this.txtCommand.Size = new System.Drawing.Size(764, 208);
             this.txtCommand.TabIndex = 1;
             // 
             // btnExecute
             // 
-            this.btnExecute.Location = new System.Drawing.Point(621, 239);
+            this.btnExecute.Location = new System.Drawing.Point(805, 321);
+            this.btnExecute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExecute.Name = "btnExecute";
-            this.btnExecute.Size = new System.Drawing.Size(126, 39);
+            this.btnExecute.Size = new System.Drawing.Size(168, 48);
             this.btnExecute.TabIndex = 2;
             this.btnExecute.Text = "&Execute Statement";
             this.btnExecute.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(117, 220);
+            this.lblCount.Location = new System.Drawing.Point(133, 300);
+            this.lblCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(16, 16);
+            this.lblCount.Size = new System.Drawing.Size(19, 20);
             this.lblCount.TabIndex = 4;
             this.lblCount.Text = "0";
             this.lblCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,9 +90,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 222);
+            this.label1.Location = new System.Drawing.Point(30, 300);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(95, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Record Count";
             // 
@@ -97,10 +101,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(13, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(788, 438);
+            this.tabControl1.Size = new System.Drawing.Size(1019, 566);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -108,13 +113,37 @@
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.btnNextTab);
             this.tabPage1.Controls.Add(this.grpODBCDSNConfig);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(780, 412);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1011, 537);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Connection";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(775, 501);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnNextTab
+            // 
+            this.btnNextTab.Location = new System.Drawing.Point(883, 501);
+            this.btnNextTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNextTab.Name = "btnNextTab";
+            this.btnNextTab.Size = new System.Drawing.Size(100, 28);
+            this.btnNextTab.TabIndex = 1;
+            this.btnNextTab.Text = "Next";
+            this.btnNextTab.UseVisualStyleBackColor = true;
+            this.btnNextTab.Click += new System.EventHandler(this.btnNextTab_Click);
             // 
             // grpODBCDSNConfig
             // 
@@ -125,51 +154,58 @@
             this.grpODBCDSNConfig.Controls.Add(this.label2);
             this.grpODBCDSNConfig.Controls.Add(this.chkODBCDSN);
             this.grpODBCDSNConfig.Controls.Add(this.txtODBCDSN_DSN);
-            this.grpODBCDSNConfig.Location = new System.Drawing.Point(30, 23);
+            this.grpODBCDSNConfig.Location = new System.Drawing.Point(24, 25);
+            this.grpODBCDSNConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpODBCDSNConfig.Name = "grpODBCDSNConfig";
-            this.grpODBCDSNConfig.Size = new System.Drawing.Size(719, 100);
+            this.grpODBCDSNConfig.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpODBCDSNConfig.Size = new System.Drawing.Size(959, 123);
             this.grpODBCDSNConfig.TabIndex = 0;
             this.grpODBCDSNConfig.TabStop = false;
             this.grpODBCDSNConfig.Enter += new System.EventHandler(this.grpODBCConfig_Enter);
             // 
             // txtDDBCDSN_Password
             // 
-            this.txtDDBCDSN_Password.Location = new System.Drawing.Point(100, 71);
+            this.txtDDBCDSN_Password.Location = new System.Drawing.Point(133, 87);
+            this.txtDDBCDSN_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDDBCDSN_Password.Name = "txtDDBCDSN_Password";
-            this.txtDDBCDSN_Password.Size = new System.Drawing.Size(270, 20);
+            this.txtDDBCDSN_Password.Size = new System.Drawing.Size(359, 22);
             this.txtDDBCDSN_Password.TabIndex = 10;
             // 
             // txtODBCDSN_Username
             // 
-            this.txtODBCDSN_Username.Location = new System.Drawing.Point(100, 45);
+            this.txtODBCDSN_Username.Location = new System.Drawing.Point(133, 55);
+            this.txtODBCDSN_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtODBCDSN_Username.Name = "txtODBCDSN_Username";
-            this.txtODBCDSN_Username.Size = new System.Drawing.Size(270, 20);
+            this.txtODBCDSN_Username.Size = new System.Drawing.Size(359, 22);
             this.txtODBCDSN_Username.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 47);
+            this.label3.Location = new System.Drawing.Point(47, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(73, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Username";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 74);
+            this.label4.Location = new System.Drawing.Point(47, 91);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 22);
+            this.label2.Location = new System.Drawing.Point(47, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "DSN";
             // 
@@ -179,9 +215,10 @@
             this.chkODBCDSN.BackColor = System.Drawing.Color.White;
             this.chkODBCDSN.Checked = true;
             this.chkODBCDSN.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkODBCDSN.Location = new System.Drawing.Point(6, -1);
+            this.chkODBCDSN.Location = new System.Drawing.Point(8, -1);
+            this.chkODBCDSN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkODBCDSN.Name = "chkODBCDSN";
-            this.chkODBCDSN.Size = new System.Drawing.Size(82, 17);
+            this.chkODBCDSN.Size = new System.Drawing.Size(102, 21);
             this.chkODBCDSN.TabIndex = 0;
             this.chkODBCDSN.Text = "ODBC DSN";
             this.chkODBCDSN.UseVisualStyleBackColor = false;
@@ -189,9 +226,10 @@
             // 
             // txtODBCDSN_DSN
             // 
-            this.txtODBCDSN_DSN.Location = new System.Drawing.Point(100, 19);
+            this.txtODBCDSN_DSN.Location = new System.Drawing.Point(133, 23);
+            this.txtODBCDSN_DSN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtODBCDSN_DSN.Name = "txtODBCDSN_DSN";
-            this.txtODBCDSN_DSN.Size = new System.Drawing.Size(270, 20);
+            this.txtODBCDSN_DSN.Size = new System.Drawing.Size(359, 22);
             this.txtODBCDSN_DSN.TabIndex = 1;
             this.txtODBCDSN_DSN.TextChanged += new System.EventHandler(this.txtODBCDSN_DSN_TextChanged);
             // 
@@ -202,10 +240,11 @@
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.btnExecute);
             this.tabPage2.Controls.Add(this.grdRecord);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(780, 412);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1011, 537);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Test SQL";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -213,37 +252,19 @@
             // grdRecord
             // 
             this.grdRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdRecord.Location = new System.Drawing.Point(41, 6);
+            this.grdRecord.Location = new System.Drawing.Point(33, 8);
+            this.grdRecord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdRecord.Name = "grdRecord";
-            this.grdRecord.Size = new System.Drawing.Size(706, 213);
+            this.grdRecord.Size = new System.Drawing.Size(941, 285);
             this.grdRecord.TabIndex = 1;
-            // 
-            // btnNextTab
-            // 
-            this.btnNextTab.Location = new System.Drawing.Point(674, 371);
-            this.btnNextTab.Name = "btnNextTab";
-            this.btnNextTab.Size = new System.Drawing.Size(75, 23);
-            this.btnNextTab.TabIndex = 1;
-            this.btnNextTab.Text = "Next";
-            this.btnNextTab.UseVisualStyleBackColor = true;
-            this.btnNextTab.Click += new System.EventHandler(this.btnNextTab_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(593, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmTester
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1044, 573);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmTester";
             this.Text = "SQL Tester";
             this.Load += new System.EventHandler(this.Form1_Load);
