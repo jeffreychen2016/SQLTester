@@ -116,5 +116,12 @@ namespace SQLTester
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+            frm.SetDesktopLocation(this.Location.X + this.Size.Width, this.Location.Y);
+        }
     }
 }
