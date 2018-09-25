@@ -45,9 +45,10 @@
             this.chkODBCDSN = new System.Windows.Forms.CheckBox();
             this.txtODBCDSN_DSN = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnRemoveSlashes = new System.Windows.Forms.Button();
+            this.btnUsefulQueries = new System.Windows.Forms.Button();
             this.grdRecord = new System.Windows.Forms.DataGridView();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.button1 = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -113,7 +114,7 @@
             this.tabPage1.Controls.Add(this.grpODBCDSNConfig);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(756, 434);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Connection";
@@ -221,7 +222,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.btnRemoveSlashes);
+            this.tabPage2.Controls.Add(this.btnUsefulQueries);
             this.tabPage2.Controls.Add(this.lblCount);
             this.tabPage2.Controls.Add(this.txtCommand);
             this.tabPage2.Controls.Add(this.label1);
@@ -229,11 +231,31 @@
             this.tabPage2.Controls.Add(this.grdRecord);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(756, 434);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Test SQL";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveSlashes
+            // 
+            this.btnRemoveSlashes.Location = new System.Drawing.Point(605, 351);
+            this.btnRemoveSlashes.Name = "btnRemoveSlashes";
+            this.btnRemoveSlashes.Size = new System.Drawing.Size(124, 39);
+            this.btnRemoveSlashes.TabIndex = 7;
+            this.btnRemoveSlashes.Text = "Remove Slashes";
+            this.btnRemoveSlashes.UseVisualStyleBackColor = true;
+            this.btnRemoveSlashes.Click += new System.EventHandler(this.btnRemoveSlashes_Click);
+            // 
+            // btnUsefulQueries
+            // 
+            this.btnUsefulQueries.Location = new System.Drawing.Point(604, 306);
+            this.btnUsefulQueries.Name = "btnUsefulQueries";
+            this.btnUsefulQueries.Size = new System.Drawing.Size(125, 39);
+            this.btnUsefulQueries.TabIndex = 6;
+            this.btnUsefulQueries.Text = "Useful Queries";
+            this.btnUsefulQueries.UseVisualStyleBackColor = true;
+            this.btnUsefulQueries.Click += new System.EventHandler(this.btnUsefulQueries_Click);
             // 
             // grdRecord
             // 
@@ -242,16 +264,6 @@
             this.grdRecord.Name = "grdRecord";
             this.grdRecord.Size = new System.Drawing.Size(706, 232);
             this.grdRecord.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(604, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Useful Queries";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // fileSystemWatcher1
             // 
@@ -299,8 +311,9 @@
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnNextTab;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUsefulQueries;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Button btnRemoveSlashes;
     }
 }
 
