@@ -44,7 +44,7 @@
             this.chkODBCDSN = new System.Windows.Forms.CheckBox();
             this.txtODBCDSN_DSN = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtReplaceWith = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCommand = new System.Windows.Forms.RichTextBox();
@@ -234,7 +234,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txtReplaceWith);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.txtCommand);
@@ -254,12 +254,12 @@
             this.tabPage2.Text = "Test SQL";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtReplaceWith
             // 
-            this.textBox1.Location = new System.Drawing.Point(863, 479);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 22);
-            this.textBox1.TabIndex = 12;
+            this.txtReplaceWith.Location = new System.Drawing.Point(863, 479);
+            this.txtReplaceWith.Name = "txtReplaceWith";
+            this.txtReplaceWith.Size = new System.Drawing.Size(109, 22);
+            this.txtReplaceWith.TabIndex = 12;
             // 
             // label6
             // 
@@ -382,7 +382,7 @@
         private System.Windows.Forms.TextBox txtStringToSearch;
         private System.Windows.Forms.RichTextBox txtCommand;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtReplaceWith;
         private System.Windows.Forms.Label label6;
     }
 }
