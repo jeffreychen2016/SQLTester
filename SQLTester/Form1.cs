@@ -124,9 +124,43 @@ namespace SQLTester
             frm.SetDesktopLocation(this.Location.X + this.Size.Width, this.Location.Y);
         }
 
-        private void btnRemoveSlashes_Click(object sender, EventArgs e)
+        private void btnFind_Click(object sender, EventArgs e)
         {
-            
+            int index = 0;
+
+            //delete previous highlighted string
+            string temp = txtCommand.Text;
+            txtCommand.Text = "";
+            txtCommand.Text = temp;
+
+            while (index < txtCommand.Text.LastIndexOf(txtStringToSearch.Text))
+            {
+                txtCommand.Find(txtStringToSearch.Text, index, txtCommand.TextLength, RichTextBoxFinds.None);
+                txtCommand.SelectionBackColor = Color.Yellow;
+                index = txtCommand.Text.IndexOf(txtStringToSearch.Text, index) + 1;
+            }
+        }
+
+        private void txtStringToSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchString(object sender, KeyEventArgs e)
+        {
+            int index = 0;
+
+            //delete previous highlighted string
+            string temp = txtCommand.Text;
+            txtCommand.Text = "";
+            txtCommand.Text = temp;
+
+            while (index < txtCommand.Text.LastIndexOf(txtStringToSearch.Text))
+            {
+                txtCommand.Find(txtStringToSearch.Text, index, txtCommand.TextLength, RichTextBoxFinds.None);
+                txtCommand.SelectionBackColor = Color.Yellow;
+                index = txtCommand.Text.IndexOf(txtStringToSearch.Text, index) + 1;
+            }
         }
     }
 }
