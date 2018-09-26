@@ -28,7 +28,7 @@ namespace SQLTester
 
         private void btnExecute_Click(object sender, EventArgs e)
         {
-            var connString = String.Format("Dsn={0};Uid={1};Pwd={2}", txtODBCDSN_DSN.Text, txtODBCDSN_Username.Text, txtDDBCDSN_Password.Text);
+            var connString = String.Format("Dsn={0};Uid={1};Pwd={2}", txtODBCDSN_DSN.Text, txtODBCDSN_Username.Text, txtODBCDSN_Password.Text);
             conn = new OdbcConnection(connString);
             conn.Open();
 
@@ -99,7 +99,7 @@ namespace SQLTester
         {
             txtODBCDSN_DSN.Clear();
             txtODBCDSN_Username.Clear();
-            txtDDBCDSN_Password.Clear();
+            txtODBCDSN_Password.Clear();
         }
 
         private void txtODBCDSN_DSN_TextChanged(object sender, EventArgs e)
@@ -149,6 +149,11 @@ namespace SQLTester
                 txtCommand.SelectionBackColor = Color.Yellow;
                 index = txtCommand.Text.IndexOf(txtStringToSearch.Text, index) + 1; 
             }
+        }
+
+        private void txtODBCDSN_Password_TextChanged(object sender, EventArgs e)
+        {
+            txtODBCDSN_Password.UseSystemPasswordChar = true;
         }
     }
 }
