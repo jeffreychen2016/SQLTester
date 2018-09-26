@@ -126,7 +126,7 @@ namespace SQLTester
 
         private void btnReplace_Click(object sender, EventArgs e)
         {
-
+            txtCommand.Text = txtCommand.Text.Replace(txtStringToSearch.Text, txtReplaceWith.Text);
         }
 
         private void txtStringToSearch_TextChanged(object sender, EventArgs e)
