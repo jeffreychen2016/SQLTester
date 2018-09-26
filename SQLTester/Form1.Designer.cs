@@ -36,7 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnNextTab = new System.Windows.Forms.Button();
             this.grpODBCDSNConfig = new System.Windows.Forms.GroupBox();
-            this.txtDDBCDSN_Password = new System.Windows.Forms.TextBox();
+            this.txtODBCDSN_Password = new System.Windows.Forms.TextBox();
             this.txtODBCDSN_Username = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -145,7 +145,7 @@
             // 
             // grpODBCDSNConfig
             // 
-            this.grpODBCDSNConfig.Controls.Add(this.txtDDBCDSN_Password);
+            this.grpODBCDSNConfig.Controls.Add(this.txtODBCDSN_Password);
             this.grpODBCDSNConfig.Controls.Add(this.txtODBCDSN_Username);
             this.grpODBCDSNConfig.Controls.Add(this.label3);
             this.grpODBCDSNConfig.Controls.Add(this.label4);
@@ -161,13 +161,14 @@
             this.grpODBCDSNConfig.TabStop = false;
             this.grpODBCDSNConfig.Enter += new System.EventHandler(this.grpODBCConfig_Enter);
             // 
-            // txtDDBCDSN_Password
+            // txtODBCDSN_Password
             // 
-            this.txtDDBCDSN_Password.Location = new System.Drawing.Point(133, 87);
-            this.txtDDBCDSN_Password.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDDBCDSN_Password.Name = "txtDDBCDSN_Password";
-            this.txtDDBCDSN_Password.Size = new System.Drawing.Size(359, 22);
-            this.txtDDBCDSN_Password.TabIndex = 10;
+            this.txtODBCDSN_Password.Location = new System.Drawing.Point(133, 87);
+            this.txtODBCDSN_Password.Margin = new System.Windows.Forms.Padding(4);
+            this.txtODBCDSN_Password.Name = "txtODBCDSN_Password";
+            this.txtODBCDSN_Password.Size = new System.Drawing.Size(359, 22);
+            this.txtODBCDSN_Password.TabIndex = 10;
+            this.txtODBCDSN_Password.TextChanged += new System.EventHandler(this.txtODBCDSN_Password_TextChanged);
             // 
             // txtODBCDSN_Username
             // 
@@ -368,7 +369,7 @@
         private System.Windows.Forms.CheckBox chkODBCDSN;
         private System.Windows.Forms.TextBox txtODBCDSN_DSN;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDDBCDSN_Password;
+        private System.Windows.Forms.TextBox txtODBCDSN_Password;
         private System.Windows.Forms.TextBox txtODBCDSN_Username;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
