@@ -159,7 +159,7 @@ namespace SQLTester
             {
                 txtCommand.Find(txtStringToSearch.Text, index, txtCommand.TextLength, RichTextBoxFinds.None);
                 txtCommand.SelectionBackColor = Color.Yellow;
-                index = txtCommand.Text.IndexOf(txtStringToSearch.Text, index) + 1;
+                index = txtCommand.Text.IndexOf(txtStringToSearch.Text, index) + 1; 
             }
         }
     }
