@@ -44,16 +44,16 @@
             this.chkODBCDSN = new System.Windows.Forms.CheckBox();
             this.txtODBCDSN_DSN = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCommand = new System.Windows.Forms.RichTextBox();
             this.txtStringToSearch = new System.Windows.Forms.TextBox();
-            this.btnFind = new System.Windows.Forms.Button();
+            this.btnReplace = new System.Windows.Forms.Button();
             this.btnUsefulQueries = new System.Windows.Forms.Button();
             this.grdRecord = new System.Windows.Forms.DataGridView();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpODBCDSNConfig.SuspendLayout();
@@ -77,7 +77,7 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(133, 300);
+            this.lblCount.Location = new System.Drawing.Point(122, 299);
             this.lblCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(19, 20);
@@ -238,7 +238,7 @@
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.txtCommand);
             this.tabPage2.Controls.Add(this.txtStringToSearch);
-            this.tabPage2.Controls.Add(this.btnFind);
+            this.tabPage2.Controls.Add(this.btnReplace);
             this.tabPage2.Controls.Add(this.btnUsefulQueries);
             this.tabPage2.Controls.Add(this.lblCount);
             this.tabPage2.Controls.Add(this.label1);
@@ -252,6 +252,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Test SQL";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(863, 479);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(109, 22);
+            this.textBox1.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(785, 479);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Replace";
             // 
             // label5
             // 
@@ -281,16 +298,16 @@
             this.txtStringToSearch.TextChanged += new System.EventHandler(this.txtStringToSearch_TextChanged);
             this.txtStringToSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.searchString);
             // 
-            // btnFind
+            // btnReplace
             // 
-            this.btnFind.Location = new System.Drawing.Point(789, 532);
-            this.btnFind.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(185, 48);
-            this.btnFind.TabIndex = 7;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            this.btnReplace.Location = new System.Drawing.Point(789, 532);
+            this.btnReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReplace.Name = "btnReplace";
+            this.btnReplace.Size = new System.Drawing.Size(185, 48);
+            this.btnReplace.TabIndex = 7;
+            this.btnReplace.Text = "Replace";
+            this.btnReplace.UseVisualStyleBackColor = true;
+            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
             // 
             // btnUsefulQueries
             // 
@@ -316,23 +333,6 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(785, 479);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Repace";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(863, 479);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 22);
-            this.textBox1.TabIndex = 12;
             // 
             // frmTester
             // 
@@ -377,7 +377,7 @@
         private System.Windows.Forms.Button btnNextTab;
         private System.Windows.Forms.Button btnUsefulQueries;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.Button btnReplace;
         private System.Windows.Forms.TextBox txtStringToSearch;
         private System.Windows.Forms.RichTextBox txtCommand;
         private System.Windows.Forms.Label label5;
