@@ -7,6 +7,7 @@ With this SQL Tester, we can easily connect to client's database through ODBC, a
 - Clone down this repo
 - Navigate to builds/ directory
 - Open either 32 or 64 version of the app based on the OBDC you set up. (If the ODBC you set up is 32bit, then you have to use 32 application. If ODBC is 64bit, then you will need to use 64 version)
+<img src="https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester3.PNG" alt="alt text" width="865" height="595">
 ![Builds](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester3.PNG =865x595)
 
 ## How to use this app
