@@ -1,3 +1,4 @@
+## Why create this app
 This SQL Tester tool is created for making the daily job eaiser for our team. As a Data Intergation Specialist & SQL Developer for integrating various EPR databases with our MySQL database, our daily responsibility involves writing sql script and testing sql script in  external client's server. For some ERP's database like Sage300, there is no tool or interface like SSMS or SQLYog that we can use to query their database directly. Before I created this tool, we had to use Excel to connect to ODBC, and then query the database. The problem with Excel is that it is slow, and some old version of Excel is difficult to use. A lot of time, we spent 2/3 time figurating out how to use different version of Excel instead of actually testing the sql code.
 
 With this SQL Tester, we can easily connect to client's database through ODBC, and get the data returned in a human readable format.
@@ -17,8 +18,7 @@ With this SQL Tester, we can easily connect to client's database through ODBC, a
 ![SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester5.PNG)
 
 3. If you need a cheatsheet to find a table, you can click on the "Useful Queries" button. It will bring up a separate window which has some codes for different database.
-![Useful SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester4.PNG
-)
+![Useful SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester4.PNG)
 
 ## Authors
 [Jeffrey Chen](https://github.com/jeffreychen2016)
