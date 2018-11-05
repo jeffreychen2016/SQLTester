@@ -7,18 +7,18 @@ With this SQL Tester, we can easily connect to client's database through ODBC, a
 - Clone down this repo
 - Navigate to builds/ directory
 - Open either 32 or 64 version of the app based on the OBDC you set up. (If the ODBC you set up is 32bit, then you have to use 32 application. If ODBC is 64bit, then you will need to use 64 version)
-![Builds](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester3.PNG)
+![Builds](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester3.PNG =865x595)
 
 ## How to use this app
 1. Open up the app, fill in the connection info and click "Next" to go to next tab.
 
-![Connection Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester1.PNG)
+![Connection Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester1.PNG =865x595)
 
 2. In "Test SQL" tab, you and write sql code in the bottom text area, and hit "Execute Statement" button to execute your query. The result will be displayed on the top box.
-![SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester5.PNG)
+![SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester5.PNG =865x595)
 
 3. If you need a cheatsheet to find a table, you can click on the "Useful Queries" button. It will bring up a separate window which has some codes for different database.
-![Useful SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester4.PNG)
+![Useful SQL Page](https://raw.githubusercontent.com/jeffreychen2016/SQLTester/master/imgs/SQLTester4.PNG =865x595)
 
 ## Authors
 [Jeffrey Chen](https://github.com/jeffreychen2016)
