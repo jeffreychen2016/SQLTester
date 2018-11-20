@@ -1,7 +1,8 @@
-## Why create this app
-This SQL Tester tool is created for making the daily job eaiser for our team. As a Data Intergation Specialist & SQL Developer for integrating various ERP databases with our MySQL database, our daily responsibility involves writing sql script and testing sql script in  external client's server. For some ERP's database like Sage300, there is no tool or interface like SSMS or SQLYog that we can use to query their database directly which makes our testing job extremely difficult. Before I created this tool, we had to use Excel to connect to ODBC, and then query the database. The problem with Excel is that it is slow, and there are some many different versions. When worked with ERP like Sage300, everytime we had to spend 2/3 time figurating out how to set set connection instead of actually testing the sql code.
+## Why created this app
+This SQL Tester tool is created for making the daily job easier for our team. As a Data Integration Specialist & SQL Developer for integrating various ERP databases with our MySQL database, our daily responsibility involves writing sql script and testing sql script in external client's server. For some ERP's database like Sage300, there is no tool or interface like SSMS or SQLYog that we can use to query their database directly which makes our testing job extremely difficult. Before I created this tool, we had to use Excel to connect to ODBC, and then query the database. The problem with Excel is that it is slow, and there are some many different versions. When worked with ERP like Sage300, every time we had to spend 2/3 time figuring out how to set up connection instead of testing the sql code.
 
 With this SQL Tester, we can easily connect to client's database through ODBC, and get the data returned in a human readable format.
+
 
 ## Where to open this app
 - Clone down this repo
